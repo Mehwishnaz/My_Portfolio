@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css');
+@import url('https://fonts.googleapis.com/css?family=Syne');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+
+    --linear-gredient: linear-gradient(144.33034790279294deg, rgba(95, 95, 95, 1) 5.881913859391604%, rgba(0, 0, 0, 1) 91.68162524551667%);
+    --text: linear-gradient(144.33034790279294deg, rgba(65, 65, 65, 1) 5.881913859391604%, rgba(0, 0, 0, 1) 91.68162524551667%);
+    --font: white;
+    --link: black;
+    --font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.Experience,
+header,
+footer {
+    background: rgba(0, 0, 0, 0.7) url('/portfolio/IMG/TAAnual.png');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.Education,
+header,
+footer {
+    background: rgba(0, 0, 0, 0.7) url('/portfolio/IMG/Hamdard.jpeg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.Certificate,
+header,
+footer {
+    background: rgba(0, 0, 0, 0.7) url('/portfolio/IMG/heed.jpeg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+#navbar {
+    display: flex;
+    justify-content: right;
+    justify-content: right;
+    background-color: transparent;
+    color: #E3AE57;
+    /* color: rgb(0, 0, 0);
+    background: rgba(210, 204, 204, 0.7) url('/portfolio/IMG/heed.jpeg'); */
+    background-blend-mode: soft-light;
+
+    padding: 10px 0;
+}
+
+#navbar a {
+    margin: 0 20px 0;
+    color: var(--link);
+    font-size: 1.25rem;
+    padding: 10px 0;
+    color: inherit;
+    text-decoration: none;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    line-height: 40px;
+    transition: all 0.4s ease-in-out;
+
+}
+
+#navbar a:hover {
+    justify-content: right;
+    background-color: transparent;
+    color: #E3AE57;
+    /* color: rgb(0, 0, 0);
+    background: rgba(210, 204, 204, 0.7) url('/portfolio/IMG/heed.jpeg'); */
+    background-blend-mode: soft-light;
+    background-blend-mode: darken;
+    padding-bottom: 10px;
+    margin: 0px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.firstSection {
+    height: 60vh;
+}
+
+@keyframes myAnim {
+    0% {
+        animation-timing-function: ease-in;
+        opacity: 0;
+        transform: translateY(-250px);
+    }
+
+    38% {
+        animation-timing-function: ease-out;
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    55% {
+        animation-timing-function: ease-in;
+        transform: translateY(-65px);
+    }
+
+    72% {
+        animation-timing-function: ease-out;
+        transform: translateY(0);
+    }
+
+    81% {
+        animation-timing-function: ease-in;
+        transform: translateY(-28px);
+    }
+
+    90% {
+        animation-timing-function: ease-out;
+        transform: translateY(0);
+    }
+
+    95% {
+        animation-timing-function: ease-in;
+        transform: translateY(-8px);
+    }
+
+    100% {
+        animation-timing-function: ease-out;
+        transform: translateY(0);
+    }
+}
+
+.box-main {
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(251, 251, 251);
+    font-family: var(--font-family);
+    max-width: 50%;
+    margin: auto;
+}
+
+.thumbnail {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 10px;
+}
+
+.thumbnail img {
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 5px solid #ffffff;
+
+}
+
+.firstHalf {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.secondHalf {
+    width: 50%;
+}
+
+.secondHalf img {
+    width: 100%;
+    display: block;
+    margin: auto;
+    border-radius: 50px;
+    border: 4px solid white;
+}
+
+.text-big {
+    font-size: 30px;
+    animation: myAnim 3s ease 0s 1 normal backwards;
+
+}
+
+.text-small {
+    font-size: 18px;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+
+
+}
+
+.section {
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+    font-family: var(--font-family);
+
+}
+
+.paras {
+    padding: 0 65px;
+}
+
+.secLeft {
+    flex-direction: row-reverse;
+}
+
+.sectionSubTag {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.thumbnail img {
+    width: 250px;
+    border: 2px solid --linear-gredient;
+    border-radius: 26px;
+}
+
+.thumbnail :hover {
+    width: 300px;
+    background: 2px solid rgb(0, 0, 0);
+    border-radius: 3px;
+    background-color: var(--text);
+
+}
+
+.sectionSubTag {
+    padding: 16px 0;
+}
+
+.contact {
+    background-color: --linear-gredient;
+    height: 833px;
+
+}
+
+.text-center {
+    text-align: center;
+    padding: 7px;
+    font-family: var(--font-family);
+    font-size: 35px;
+}
+
+.form {
+    max-width: 62%;
+    margin: 24px auto;
+}
+
+.form-input {
+    margin: 14px 0;
+    padding: 5px 3px;
+    font-family: var(--font-family);
+    width: 100%;
+    font-size: 19px;
+    border: 2px solid grey;
+    border-radius: 6px;
+    font-family: var(--font-family);
+}
+
+.text-footer {
+    padding: 30px 0;
+    font-family: var(--font-family);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.burger {
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+
+}
+
+.line {
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+}
+
+a {
+    color: rgb(0, 0, 0);
+}
+
+a:visited {
+    color: var(--linear-gredient);
+}
+
+a:hover {
+    color: var(--linear-gredient);
+}
+
+a:active {
+    color: var(--linear-gredient);
+}
+
+#about .about-img {
+    background: url('/portfolio/IMG/Contour.jpeg') no-repeat;
+}
+
+#about .about-thumb,
+#about .skill-thumb {
+    padding: 22px 32px 32px 32px;
+}
+
+#about .progress {
+    background: #ffffff;
+    border-radius: 0px;
+    box-shadow: none;
+    height: 2px;
+}
+
+#about .progress-bar-primary {
+    background: #232B2B;
+}
+skill-thumb {
+    padding: 22px 32px 32px 32px;
+    box-sizing: border-box;
+   display: block;
+}
+
+#about strong,
+#about span {
+    font-weight: bold;
+    display: inline-block;
+    padding-bottom: 8px;
+}
+
+@media only screen and (max-width:1140px) {
+    .box-main {
+        padding: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(251, 251, 251);
+        font-family: var(--font-family);
+        max-width: 50%;
+        margin: auto;
+    }
+
+    .thumbnail {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 20px 10px;
+    }
+
+    .firstSection {
+        height: 90vh;
+    }
+
+    .box-main {
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+
+    .section {
+        flex-direction: column-reverse;
+    }
+
+    .text-big {
+        text-align: center;
+    }
+
+    .text-small {
+        text-align: center;
+    }
+
+    .paras {
+        padding: 0%;
+    }
+
+    a {
+        color: black;
+    }
+
+    a:visited {
+        color: var(--linear-gredient);
+    }
+
+    a:hover {
+        color: var(--linear-gredient);
+    }
+
+    a:active {
+        color: var(--linear-gredient);
+    }
+
+    .Experience,
+    header,
+    footer {
+        background: rgba(0, 0, 0, 0.7) url('/portfolio/IMG/TAAnual.png');
+        background-size: cover;
+        background-blend-mode: darken;
+    }
+
+    .Education,
+    header,
+    footer {
+        background: rgba(0, 0, 0, 0.7) url('/portfolio/IMG/Hamdard.jpeg');
+        background-size: cover;
+        background-blend-mode: darken;
+    }
+
+    .Certificate,
+    header,
+    footer {
+        background: rgba(0, 0, 0, 0.7) url('/portfolio/IMG/heed.jpeg');
+        background-size: cover;
+        background-blend-mode: darken;
+    }
+
+    #navbar {
+        display: flex;
+        justify-content: right;
+        color: rgb(0, 0, 0);
+        background: rgba(210, 204, 204, 0.7) url('/portfolio/IMG/heed.jpeg');
+        background-blend-mode: soft-light;
+        padding: 10px 0;
+    }
+}
